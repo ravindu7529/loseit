@@ -1,0 +1,27 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+*.pyc
+
+# Large generated artefact (regenerate with generate_dataset.py)
+backend/outputs/training_dataset.csv
+
+# Flutter
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins-dependencies
+
+# Secrets - never commit an API key
+.env
+*.env
+
+# Large model/data files (too big for GitHub)
+backend/generative/data/
+backend/generative/outputs/final_model/model.safetensors
+backend/generative/outputs/final_model/*.bin
+
+# Local user data (emails / password hashes)
+backend/data/loseit_local_db.json
+
+# OS
+.DS_Store

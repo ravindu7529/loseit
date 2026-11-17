@@ -1,0 +1,65 @@
+{
+  "search_config": {
+    "cv_folds": 3,
+    "n_iter": 10,
+    "search_rows": 30071
+  },
+  "models": {
+    "Gradient Boosting": {
+      "best_params": {
+        "subsample": 1.0,
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.1
+      },
+      "cv_mae_mean": 3.423,
+      "cv_folds": 3,
+      "search_candidates": 10,
+      "test_metrics": {
+        "MAE": 3.374,
+        "RMSE": 4.228,
+        "R2": 0.9376
+      }
+    },
+    "Neural Network (MLP)": {
+      "best_params": {
+        "learning_rate_init": 0.001,
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 0.01
+      },
+      "cv_mae_mean": 3.267,
+      "cv_folds": 3,
+      "search_candidates": 10,
+      "test_metrics": {
+        "MAE": 3.281,
+        "RMSE": 4.109,
+        "R2": 0.9411
+      }
+    }
+  },
+  "comparison": {
+    "Gradient Boosting (untuned)": {
+      "MAE": 3.925,
+      "RMSE": 4.92,
+      "R2": 0.9156
+    },
+    "Gradient Boosting (tuned)": {
+      "MAE": 3.374,
+      "RMSE": 4.228,
+      "R2": 0.9376
+    },
+    "Neural Network (MLP) (untuned)": {
+      "MAE": 3.209,
+      "RMSE": 4.017,
+      "R2": 0.9437
+    },
+    "Neural Network (MLP) (tuned)": {
+      "MAE": 3.281,
+      "RMSE": 4.109,
+      "R2": 0.9411
+    }
+  }
+}

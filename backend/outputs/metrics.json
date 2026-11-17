@@ -1,0 +1,32 @@
+{
+  "Rule-based baseline": {
+    "MAE": 7.894,
+    "RMSE": 9.658,
+    "R2": 0.6746
+  },
+  "Linear Regression": {
+    "MAE": 6.281,
+    "RMSE": 8.093,
+    "R2": 0.7715
+  },
+  "Random Forest": {
+    "MAE": 4.497,
+    "RMSE": 5.713,
+    "R2": 0.8861
+  },
+  "k-Nearest Neighbors": {
+    "MAE": 4.019,
+    "RMSE": 5.061,
+    "R2": 0.9107
+  },
+  "Gradient Boosting": {
+    "MAE": 3.925,
+    "RMSE": 4.92,
+    "R2": 0.9156
+  },
+  "Neural Network (MLP)": {
+    "MAE": 3.209,
+    "RMSE": 4.017,
+    "R2": 0.9437
+  }
+}

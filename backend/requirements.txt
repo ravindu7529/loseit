@@ -1,0 +1,14 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+joblib
+fastapi
+uvicorn
+pydantic
+pymongo
+openpyxl
+torch
+transformers
+datasets
+accelerate
